@@ -1,11 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css'; // Path is correct since index.css is in the same folder
-import App from './App'; // Path is correct since App.js is in the same folder
-//
+import './index.css';
+import App from './App';
+import { BrowserRouter as Router } from 'react-router-dom';
+import { DarkModeProvider } from './Dark_Mode/DarkModeContext';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Router>
+      <DarkModeProvider>
+        <App />
+      </DarkModeProvider>
+    </Router>
   </React.StrictMode>
 );
