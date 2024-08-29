@@ -1,3 +1,34 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Add your custom styles below */
+
+body {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  background-color: #f4f4f4;
+}
+
+h1, h2, h3 {
+  color: #222;
+}
+
+.btn-custom {
+  @apply px-4 py-2 bg-blue-500 text-white rounded-lg shadow-md hover:bg-blue-600;
+}
+
+.card {
+  @apply p-4 bg-white shadow-lg rounded-lg;
+}
+
+.container {
+  @apply max-w-7xl mx-auto px-4;
+}
+
+/* Custom media queries or styles */
+@media (max-width: 768px) {
+  .container {
+    @apply px-2;
+  }
+}
