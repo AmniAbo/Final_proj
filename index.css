@@ -1,34 +1,29 @@
+/* Tailwind CSS Imports */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Add your custom styles below */
-
+/* Custom Styles */
 body {
-  font-family: 'Arial', sans-serif;
-  color: #333;
-  background-color: #f4f4f4;
+  font-family: 'Inter', sans-serif;
+  background-color: #f3f4f6; /* Light background color */
+  color: #333; /* Dark text color */
 }
 
-h1, h2, h3 {
-  color: #222;
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif;
+  color: #1f2937; /* Darker color for headings */
 }
 
-.btn-custom {
-  @apply px-4 py-2 bg-blue-500 text-white rounded-lg shadow-md hover:bg-blue-600;
+button {
+  @apply bg-blue-500 text-white font-bold py-2 px-4 rounded;
 }
 
-.card {
-  @apply p-4 bg-white shadow-lg rounded-lg;
+a {
+  @apply text-blue-600 hover:text-blue-800;
 }
 
-.container {
-  @apply max-w-7xl mx-auto px-4;
-}
-
-/* Custom media queries or styles */
-@media (max-width: 768px) {
-  .container {
-    @apply px-2;
-  }
+/* Example of custom utility class */
+.custom-margin {
+  margin: 20px;
 }
